@@ -1,21 +1,21 @@
-1. ÅØ½ºÆ® ¿¡µðÅÍ ´Ù¿î·Îµå ( ATOM / Sublime Text2)
-   APM (¾ÆÆÄÄ¡ / PHP / MYSQL) ´Ù¿î·Îµå
-   Nodejs ´Ù¿î·Îµå(¼­¹öÀÌ¿ë) 
-   APM¿¡¼­´Â MysqlÀÇ µ¥ÀÌÅÍº£ÀÌ½º¸¸ ¿­¾îµÎ°í node.js ¿¡¼­ mysql ¿¡ Á¢±Ù
+1. í…ìŠ¤íŠ¸ ì—ë””í„° ë‹¤ìš´ë¡œë“œ ( ATOM / Sublime Text2 / Visual Studio Code)
+   APM (ì•„íŒŒì¹˜ / PHP / MYSQL) ë‹¤ìš´ë¡œë“œ
+   Nodejs ë‹¤ìš´ë¡œë“œ(ì„œë²„ì´ìš©) 
+   APMì—ì„œëŠ” Mysqlì˜ ë°ì´í„°ë² ì´ìŠ¤ë§Œ ì—´ì–´ë‘ê³  node.js ì—ì„œ mysql ì— ì ‘ê·¼
 
-2. ÄÄÇ»ÅÍ IP ÁÖ¼Ò Ã¼Å©(ÇÁ·Î±×·¥Àº 52273 Æ÷Æ®»ç¿ë)
+2. ì»´í“¨í„° IP ì£¼ì†Œ ì²´í¬(í”„ë¡œê·¸ëž¨ì€ 52273 í¬íŠ¸ì‚¬ìš©)
 
 
-3. MySql DB »ý¼º
-   -> °ü·ÃÀÚ·á (DB °ü°èµµ ¹× DB ±¸¼ºµµ) ÂüÁ¶
-   -> DB »ç¿ë ±ÇÇÑ ¼³Á¤
+3. MySql DB ìƒì„±
+   -> ê´€ë ¨ìžë£Œ (DB ê´€ê³„ë„ ë° DB êµ¬ì„±ë„) ì°¸ì¡°
+   -> DB ì‚¬ìš© ê¶Œí•œ ì„¤ì •
 
-4. ¼Ò½º (db_acccount.js / db_character.js )¿¡¼­
-   DB °æ·Î¼öÁ¤
+4. ì†ŒìŠ¤ (db_acccount.js / db_character.js )ì—ì„œ
+   DB ê²½ë¡œìˆ˜ì •
 
-5. µð·ºÅä¸® CMD Ã¢¿¡¼­ node app ÀÔ·Â ÈÄ ¼­¹ö ½ÇÇà
+5. ë””ë ‰í† ë¦¬ CMD ì°½ì—ì„œ node app ìž…ë ¥ í›„ ì„œë²„ ì‹¤í–‰
 
-6. Å©·ÒÀÌ³ª ÆÄÆøÀ¸·Î À¥ÆäÀÌÁö Á¢¼Ó(ÀÍ½ºÇÃ·Î·¯ X)
+6. í¬ë¡¬ì´ë‚˜ íŒŒí­ìœ¼ë¡œ ì›¹íŽ˜ì´ì§€ ì ‘ì†(ìµìŠ¤í”Œë¡œëŸ¬ X)
 
    
-7. IPÁÖ¼Ò:52273 À¸·Î È¨ÆäÀÌÁö Á¢¼Ó ¹× °ÔÀÓ ½ÃÀÛ (localhost:Æ÷Æ® °¡´É)
+7. IPì£¼ì†Œ:52273 ìœ¼ë¡œ í™ˆíŽ˜ì´ì§€ ì ‘ì† ë° ê²Œìž„ ì‹œìž‘ (localhost:í¬íŠ¸ ê°€ëŠ¥)
