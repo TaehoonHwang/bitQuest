@@ -1,0 +1,2 @@
+global.monster_data = [];
+

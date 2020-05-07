@@ -1,0 +1,2 @@
+
+global.item_data = [];

@@ -1,0 +1,186 @@
+
+<!DOCTYPE HTML>
+<head>
+<meta charset="utf-8"/>
+    <link href="http://code.jquery.com/ui/1.10.4/themes/blitzer/jquery-ui.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="/css/animate.min.css">
+   <link rel="stylesheet" type="text/css" href="/css/basic.css">
+   <link rel="stylesheet" type="text/css" href="/css/board.css">
+   <script src="/socket.io/socket.io.js"></script>
+   <script src = "http://code.jquery.com/jquery-1.11.3.min.js"></script>
+   <script src = "http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+   <script type="text/javascript" src="js/data.js"></script>
+   <script type="text/javascript" src="js\ui_text.js"></script>
+   <script type="text/javascript" src="/js/check.js"></script>
+   <script type="text/javascript" src="js/index.js"></script>
+   <script type="text/javascript" src="js/enchant.js"></script>
+   <script type="text/javascript" src="js/game.js"></script>
+   <script type="text/javascript" src="js\io.event.js"></script>
+   <script type="text/javascript" src="js/audioplayer.js"></script>
+  <audio src="img/main.mp3" preload="auto" class="maina" volume="0.4" controls autoplay loop></audio> 
+
+ <script>
+ $(document).ready(function(){
+  $('#gamestart').click(function(){
+     document.onkeydown=keyIE;
+    document.onkeypress=keyIE2;
+    
+    function keyIE(){ // Explorer Key Event
+    if(key_input_ok)
+      {
+      }
+    }
+    
+    function keyIE2(){ // Explorer Key Event
+      if(battle_result_isOpen)
+      {
+        socket.emit('battle_finish');
+        return;
+      }
+      if(isYesno)
+      {
+        if(event.keyCode==122)
+        {
+          switch(yesno_type){
+            case 'party_apply':
+              var data = [];
+              data[0] = yesno_type;
+              data[1] = yesno_choice;
+              socket.emit('player','yesno',data);
+              yesno_close = true;
+              yesno_isNew = true;
+            break;
+            case 'role_change':
+              var data = [];
+              data[0] = yesno_type;
+              data[1] = yesno_choice;
+              data[2] = yesno_data;
+              socket.emit('player','yesno',data);
+              yesno_close = true;
+              yesno_isNew = true;
+            break;
+          }
+        }
+        return;
+      }
+      if(key_input_ok)
+      {
+
+         if(event.keyCode==122)
+         {
+           socket.emit('key','z');
+         }
+         else if(event.keyCode==115)
+         {
+           socket.emit('ui_chan','ui_skill');
+         }
+         else if(event.keyCode==105)
+         {
+           //socket.emit('key','i');
+           socket.emit('ui_chan','ui_equip');
+         }
+         else if(event.keyCode==99)
+         {
+           //socket.emit('key','c');
+           socket.emit('ui_chan','ui_status');
+         }
+         else if(event.keyCode==120)
+         {
+           socket.emit('key','x');
+         }
+       }
+    }
+  });
+});
+
+
+  </script>
+  <style type="text/css">
+   body {
+    margin: 0;
+    background: black;
+   }
+   </style>
+</head>
+<body >
+
+  <div id="test" class="please">
+
+    <div id ="anyclick"></div>
+    <div id = "BitLog" class='animated fadeIn'></div>
+    <form name="loginform" id="loginform" >
+      <div id ="dialog">
+        <h1>Login</h1>
+        ID: <input type="text" name="id" id="log_id" value ="" class="animated bounce"/>
+        PASSWORD: <input type="PASSWORD" name="pass" id="log_pw" value ="" /> <br/>
+
+      </div>
+    </form>
+    <form name="joinform"  id="joinform">
+       <div id = "dialog1">
+          <h1>Join</h1>
+          <label>ID</label><br/>
+          <input value ="" type = "text" id="joinid"/>
+          <input type="button" value="중복확인" id="id_check_btn"/>
+          <br/>
+          <label>PASSWORD</label><br/>
+          <input value ="" type = "PASSWORD" id="joinpw"/> <br/>
+          <label>PASSWORD-RE</label><br/>
+          <input value =""   type = "PASSWORD" id="joinpwre"/> <br/>
+          <label>EMAIL</label><br/>
+          <input value =""  type = "text" id="joinem"/> <br/>
+       </div>
+    </form>
+   
+  </div>
+
+  <div id="test2">
+    <div id = "Cselectbak">
+        <div id = "SelectLog" class="animated fadeInDown" ></div>
+        <div  id = 'C1'></div>
+        <div  id = 'C2'></div>
+        <div  id = 'C3'></div>
+        <div id="re">
+               <div id = "nikbak1"></div>
+          <div id = "nikbak2"></div>
+          <div id = "nikbak3"></div>
+
+          <label type = 'text' id = 'C1L' ></label>
+          <label type = 'text' id = 'C2L' ></label>
+          <label type = 'text' id = 'C3L' ></label>
+        </div>
+        <button id = "CCreate"/>
+        <button id = "CDelete"/>
+        <button id = "gamestart"/>
+      </div>
+   <div id ="info">
+        <h2>INFO</h2>
+        NICKNAME: <input type="text" value=""readonly='true' id="nickname" name='pink'/> <br/>
+        JOB: <input type="text" value ="" readonly='true' id='job' name='pink'/> <br/>
+        LEVEL: <input type="text" value ="" readonly='true' id='level' name='pink'/> <br/>
+        STR:<input type="text" value ="" readonly='true' id="str" name='pink'/> <br/>
+        DEX:<input type="text" value ="" readonly='true' id="dex" name='pink'/> <br/>
+        INT:<input type="text" value ="" readonly='true' id="int" name='pink'/> <br/>
+        VLT:<input type="text" value="" readonly='true' id='vlt' name='pink'/> <br/>
+        AGI:<input type="text" value ="" readonly='true' id="agi" name='pink'/> <br/>
+      </div>
+      <div id="CCDialog">
+        <h1>캐릭터 생성</h1>
+        닉네임:<input type="text" name="CCnic" value="" id="CC_nik"/>
+      </div>
+      <div id="CDDialog">
+        <h1>캐릭터 삭제</h1>
+        닉네임:<input type="text" naime="CDnic" value="" id="CD_nik"/>
+      </div>
+  </div>
+
+ <div id="chat" onClick="open_chatbox();"> Chat Now </div>
+<div id="chatBox"><!--<div onclick="closeChat()" id="close"></div>-->
+<h2>CHAT</h2>
+   <textarea id="chatarea" style="width:99%; height:50%; resize:none" readonly="true"></textarea>
+   글 : <input type="text" id="chattext" style="width:100"/>
+   <input type="button" id="chatsend" value="Send"/> 
+</div>
+
+</body>
+</html>

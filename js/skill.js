@@ -1,0 +1,2 @@
+global.skill_data = [];
+

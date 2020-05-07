@@ -1,0 +1,206 @@
+<style type="text/css">
+
+		#ad{
+			left: 12px;
+		}
+
+		#level{margin-left: 32px;}
+		#exp{margin-left: 56px;}
+		#str{margin-left: 56px;}
+		#dex{margin-left: 56px;}
+		#int{margin-left: 56px;}
+		#vlt{margin-left: 56px;}
+		#agi{margin-left: 56px;}
+		#job{margin-left: 54px;}
+
+		#s_img{ margin-left: 32px; 
+				width : 200px;
+				height : 224px; }
+
+		#s_nickname{ width: 190px; }
+        #s_level{ width: 70px; }
+        #s_job{ width: 25px; }
+        #s_exp{ width: 190px; }
+        #s_str{ width: 80px; }
+        #s_dex{ width: 80px; }
+        #s_int{ width: 80px; }
+        #s_vlt{ width: 80px; }
+        #s_agi{ width: 80px; }
+        #s_job{ width: 80px; }
+        #s_gold{ width: 150px; }
+
+
+		#info{
+			color: #FFFFFF !important;
+		}
+
+		#Cselectbak{
+			width:1024px;
+			height:768px;
+			top:0px;
+			left: 0px;
+			margin:0px auto;
+			position: absolute;
+		}
+		
+		#SelectLog{
+			position: absolute;
+			top: -50px;
+			left: 100px;
+			width: 800px;
+			margin: 0px auto;
+			height: 220px;
+			-webkit-animation-duration: 5s;
+			/*-webkit-animation-delay:10s;
+			-webkit-animation-iteration-count: 4;*/
+		}
+
+		#C1{
+			position: absolute;
+			top: 365px;
+			left: 105px;
+			width: 200px;
+			margin: 0px auto;
+			height: 224px;
+		}
+		#C2{
+			position: absolute;
+			top: 416px;
+			left: 415px;
+			width: 200px;
+			margin: 0px auto;
+			height: 224px;
+		}
+		#C3{
+			position: absolute;
+			top: 365px;
+			left: 740px;
+			width: 200px;
+			margin: 0px auto;
+			height: 224px;
+		}
+		#nikbak1{
+		 position: absolute;
+         top : 590px;
+         left : 115px;
+         width: 170px;
+         margin: 0px auto;
+         height: 40px;
+		}
+		#nikbak2{
+		 position: absolute;
+         top : 640px;
+         left : 423px;
+         width: 170px;
+         margin: 0px auto;
+         height: 40px;
+		}
+		#nikbak3{
+		 position: absolute;
+         top : 590px;
+         left : 747px;
+         width: 170px;
+         margin: 0px auto;
+         height: 40px;
+		}
+
+	  #C1L{
+         position: absolute;
+         text-align : center;
+         top : 590px;
+         left : 50px;
+         width: 300px;
+         margin: 0px auto;
+         height: 35px;
+         color: white;
+         font-size: 25px;
+      }
+      #C2L{
+         position: absolute;
+         text-align : center;
+         top : 640px;
+         left : 345px;
+         width: 300px;
+         margin: 0px auto;
+         height: 35px;
+         color: white;
+         font-size: 25px;
+      }
+      #C3L{
+         position: absolute;
+         text-align : center;
+         top : 590px;
+         left : 685px;
+         width: 300px;
+         margin: 0px auto;
+         height: 35px;
+         color: white;
+         font-size: 25px;
+      }
+
+		#CCreate{
+			position: absolute;
+			top : 700px;
+			left : 470px;
+			width: 93px;
+			margin: 0px auto;
+			height: 35px;
+		}
+		#CDelete{
+			position: absolute;
+			top : 700px;
+			left : 350px;
+			width: 93px;
+			margin: 0px auto;
+			height: 35px;
+		}
+		#gamestart{
+			position: absolute;
+			top : 700px;
+			left : 450px;
+			width: 263px;
+			margin: 0px auto;
+			height: 35px;
+		}
+
+		#anyclick{
+			position: absolute;
+			top: 600px;
+			left: 260px;
+			width: 510px;
+			margin: 0px auto;
+			height: 57px;
+		}
+
+/*		#expup{
+			width:60px;
+			height: 60px;
+		}
+*/
+		#test_btn{
+			width: 100px;
+			height: 10px;
+			
+		}
+		#stat_dialog{
+			color: #FFFFFF !important;
+		}
+
+		#eon{
+			position: absolute;
+			left: 500px;
+			top: 900px;
+		}
+
+
+
+
+		.inven_img{
+			height: 50px;
+			width: 50px;
+		}
+
+		
+
+
+</style>

@@ -1,0 +1,89 @@
+<style type="text/css">
+			#go_btn{
+				width: 300px;
+				height: 50px;
+				margin: 20px;
+				top : 800px;
+				left: 0;
+				position: absolute;
+				background: #98bf21
+			}
+
+			#log_id{
+				width:200px;
+				-webkit-animation-duration: 1s;
+				/*-webkit-animation-delay:10s;*/
+				-webkit-animation-iteration-count: 4;
+			}
+			#test{
+				width:1024px;
+				height:768px;
+				top:0px;
+				left: 0px;
+				margin:0px auto;
+				position: absolute;
+				-webkit-animation-duration: 3s;
+			}	
+			#BitLog{
+			position: absolute;
+			top: -50px;
+			left: 100px;
+			width: 800px;
+			margin: 0px auto;
+			height: 220px;
+			-webkit-animation-duration: 5s;
+			/*-webkit-animation-delay:10s;
+			-webkit-animation-iteration-count: 4;*/
+		}
+		#chat
+			 {
+			 position:absolute;
+			 width:200px;
+			 height:auto;
+			 padding:10px;
+			 background:#088A68;
+			 color:#EDEDED;
+			 text-align:center;
+			 font-family:Cambria;
+			 font-size:20px;
+			 bottom:0px;
+			 right:15px;
+			 cursor:pointer;
+			 }
+			 /*
+			 #chatBox
+			 {
+			 display:none;
+			 position:absolute;
+			 width:200px;
+			 height:300px;
+			 padding:10px;
+			 background:#EDEDED;
+			 color:#FF7700;
+			 text-align:center;
+			 font-family:Cambria;
+			 font-size:20px;
+			 bottom:0px;
+			 right:15px;
+			 cursor:pointer;
+			 }
+			 */
+			 #close
+			 {
+			 position:absolute;
+			 width:15px;
+			 height:15px;
+			 padding:6px 5px 10px 5px;
+			 text-align:center;
+			 background:rgba(0,0,0,0.8);
+			 color:#FF7700;
+			 font-family:Cambria;
+			 right:0px;top:0px;
+			 }
+
+			 .maina{
+			 	position: absolute;
+			 	top:0px;
+			 	left: 800px;
+			 }
+</style>
